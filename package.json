@@ -1,0 +1,53 @@
+{
+  "name": "frontend-webpack-template",
+  "version": "1.0.0",
+  "description": "Frontend webpack template",
+  "main": "index.js",
+  "browserslist": "> 0.25%, not dead",
+  "dependencies": {
+    "@babel/polyfill": "^7.8.7",
+    "jquery": "^3.5.1",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.0.1",
+    "cross-env": "^7.0.2",
+    "css-loader": "^3.5.3",
+    "eslint": "^7.0.0",
+    "eslint-loader": "^4.0.2",
+    "file-loader": "^6.0.0",
+    "glob": "^7.1.6",
+    "html-webpack-plugin": "^4.3.0",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-jpegtran": "^6.0.0",
+    "imagemin-optipng": "^7.1.0",
+    "imagemin-svgo": "^7.1.0",
+    "imagemin-webpack": "^5.1.1",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^3.0.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "watch": "cross-env NODE_ENV=development webpack --watch --mode development",
+    "test": "cross-env NODE_ENV=development webpack --mode development",
+    "dev-server": "cross-env NODE_ENV=development webpack-dev-server --mode development --open",
+    "build": "cross-env NODE_ENV=production webpack --mode production"
+  },
+  "keywords": [],
+  "author": "Maxim Polyaev",
+  "license": "ISC"
+}
